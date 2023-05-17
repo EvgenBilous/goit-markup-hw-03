@@ -8,11 +8,42 @@
   --navy-blue: #2e2f42;
   --slate: #434455;
 }
-
 body {
   font-family: Roboto, sans-serif;
   color: var(--slate);
   background-color: var(--white);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .link {
@@ -22,15 +53,17 @@ body {
 .list {
   list-style: none;
 }
-
-/* .header-navigation {
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
-.header-logo {
+.section {
 }
-
-.header-list {
-} */
+/**-----HEADER-----**/
 
 .header-link {
   font-weight: 500;
@@ -151,12 +184,6 @@ div.scrollmenu a:hover {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--white);
-}
-.hero-item {
-}
-.hero-list {
-}
-.hero-link {
 }
 
 .hero-button {
@@ -455,17 +482,11 @@ div.scrollmenu a:hover {
 }
 
 .containerFeatures {
-  max-width: 1128px;
   padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 78px;
 }
 .containerServices {
-  max-width: 1128px;
   padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 78px;
 }
 .containerTeam {
@@ -477,21 +498,18 @@ div.scrollmenu a:hover {
   background-color: var(--cloud);
 }
 .container-block1 {
-  max-width: 100%;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--cloud);
 }
 .container-block2 {
-  max-width: 100%;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--cloud);
 }
 .container-block3 {
-  max-width: 100%;
   padding: 5px;
   margin-left: auto;
   margin-right: auto;
