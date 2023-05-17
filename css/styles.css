@@ -52,6 +52,7 @@ img {
 
 .list {
   list-style: none;
+  display: flex;
 }
 .container {
   display: flex;
@@ -76,6 +77,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  padding: 24px 0;
 }
 
 .header-link:hover,
@@ -172,13 +174,7 @@ div.scrollmenu a:hover {
   color: var(--slate);
 }
 .contacts {
-  list-style: none;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  color: var(--slate);
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  gap: 40px;
 }
 .first-item-contacts {
   font-size: 16px;
