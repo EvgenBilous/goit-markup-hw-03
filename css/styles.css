@@ -309,6 +309,7 @@ div.scrollmenu a:hover {
 
 .team {
   background-color: var(--cloud);
+  padding: 120px;
 }
 .team-titles {
   font-size: 36px;
@@ -317,6 +318,7 @@ div.scrollmenu a:hover {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue);
+  margin-bottom: 72px;
 }
 
 .team-members-names {
@@ -325,6 +327,7 @@ div.scrollmenu a:hover {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue);
+  gap: 24px;
 }
 .team-item {
   background-color: var(--white);
@@ -334,8 +337,17 @@ div.scrollmenu a:hover {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
-
+.team-members-names {
+  padding: 32px 16px;
+}
+.team-members-headers {
+  text-align: center;
+  margin-bottom: 8px;
+}
 .app-button {
   box-sizing: border-box;
 
@@ -622,6 +634,7 @@ div.scrollmenu a:hover {
   width: 100%;
   height: 312px;
   background-color: var(--navy-blue);
+  padding: 100px;
 }
 .footer_text {
   width: 264px;
@@ -630,6 +643,7 @@ div.scrollmenu a:hover {
   /* or 150% */
   letter-spacing: 0.02em;
   color: var(--cloud);
+  max-width: 264px;
 }
 .footer_logo {
   color: var(--iris);
@@ -639,8 +653,13 @@ div.scrollmenu a:hover {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-p {
   color: var(--cloud);
+}
+.portfolio-section {
+  padding: 96px 0 120px;
 }
