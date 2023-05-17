@@ -53,6 +53,7 @@ img {
 .list {
   list-style: none;
   display: flex;
+  gap: 24px;
 }
 .container {
   display: flex;
@@ -242,12 +243,16 @@ div.scrollmenu a:hover {
   letter-spacing: 0.04em;
   font-family: Roboto, sans-serif;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid -var(--cornflower);
+  border-radius: 4px;
 }
 
 .btn:hover,
 .btn:focus {
   color: var(--white);
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 
 .all-button {
@@ -309,7 +314,10 @@ div.scrollmenu a:hover {
 
 .team {
   background-color: var(--cloud);
-  padding: 120px;
+  padding: 120px 0;
+}
+.team-list {
+  gap: 24px;
 }
 .team-titles {
   font-size: 36px;
@@ -319,6 +327,16 @@ div.scrollmenu a:hover {
   text-transform: capitalize;
   color: var(--navy-blue);
   margin-bottom: 72px;
+}
+
+.team-headers {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-members-names {
@@ -331,14 +349,14 @@ div.scrollmenu a:hover {
 }
 .team-item {
   background-color: var(--white);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
 .team-members-names {
@@ -572,6 +590,15 @@ div.scrollmenu a:hover {
   padding: 0;
   list-style: none;
   justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.card-photo-links {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 .photo-subheader {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -634,7 +661,7 @@ div.scrollmenu a:hover {
   width: 100%;
   height: 312px;
   background-color: var(--navy-blue);
-  padding: 100px;
+  padding: 100px 0;
 }
 .footer_text {
   width: 264px;
@@ -662,4 +689,9 @@ div.scrollmenu a:hover {
 }
 .portfolio-section {
   padding: 96px 0 120px;
+}
+.button-list {
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
