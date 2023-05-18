@@ -8,6 +8,7 @@
   --navy-blue: #2e2f42;
   --slate: #434455;
 }
+
 body {
   font-family: Roboto, sans-serif;
   color: var(--slate);
@@ -52,12 +53,11 @@ img {
 
 .list {
   list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 .container {
-  display: flex;
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
@@ -232,6 +232,7 @@ div.scrollmenu a:hover {
 }
 
 .btn {
+  display: inline-block;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -252,29 +253,6 @@ div.scrollmenu a:hover {
   color: var(--white);
   background-color: var(--ocean);
   border: 1px solid transparent;
-}
-
-.all-button {
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-  width: 69px;
-  height: 48px;
-
-  /* IRIS */
-  background: var(--iris);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* identical to box height, or 150% */
-  color: var(--white);
-  align-items: center;
-  letter-spacing: 0.04em;
-  border: 1px solid var(--cornflower);
 }
 
 /**----------ABOUT-------**/
@@ -345,6 +323,7 @@ div.scrollmenu a:hover {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   gap: 24px;
+  padding: 32px 16px;
 }
 .team-item {
   background-color: var(--white);
@@ -358,129 +337,10 @@ div.scrollmenu a:hover {
   color: var(--slate);
   text-align: center;
 }
-.team-members-names {
-  padding: 32px 16px;
-}
+
 .team-members-headers {
   text-align: center;
   margin-bottom: 8px;
-}
-.app-button {
-  box-sizing: border-box;
-
-  /* Auto layout */
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 12px 24px; */
-
-  width: 78px;
-  height: 48px;
-
-  /* CLOUD */
-
-  background: var(--cloud);
-  /* CORNFLOWER */
-
-  border: 1px solid var(--cornflower);
-  border-radius: 4px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  color: var(--iris);
-}
-.website-button {
-  box-sizing: border-box;
-  list-style: none;
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 12px 24px; */
-
-  width: 116px;
-  height: 48px;
-
-  /* CLOUD */
-
-  background: var(--cloud);
-  /* CORNFLOWER */
-
-  border: 1px solid var(--cornflower);
-  border-radius: 4px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  color: var(--iris);
-}
-.design-button {
-  box-sizing: border-box;
-  list-style: none;
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 12px 24px; */
-
-  width: 101px;
-  height: 48px;
-
-  /* CLOUD */
-
-  background: var(--cloud);
-  /* CORNFLOWER */
-
-  border: 1px solid var(--cornflower);
-  border-radius: 4px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  color: var(--iris);
-}
-.marketing-button {
-  list-style: none;
-  box-sizing: border-box;
-
-  /* Auto layout */
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* padding: 12px 24px; */
-
-  width: 126px;
-  height: 48px;
-
-  /* CLOUD */
-
-  background: #f4f4fd;
-  /* CORNFLOWER */
-
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-
-  /* Inside auto layout */
-
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  color: var(--iris);
 }
 
 .set-buttons ul {
@@ -690,6 +550,7 @@ div.scrollmenu a:hover {
   padding: 96px 0 120px;
 }
 .button-list {
+  display: flex;
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
