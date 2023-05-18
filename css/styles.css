@@ -53,7 +53,8 @@ img {
 .list {
   list-style: none;
   display: flex;
-  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 .container {
   display: flex;
@@ -64,8 +65,6 @@ img {
   outline: 2px solid red;
 }
 
-.section {
-}
 /**-----HEADER-----**/
 
 .header-list {
@@ -574,7 +573,7 @@ div.scrollmenu a:hover {
 }
 
 .card-photo {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   height: 420px;
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
