@@ -178,6 +178,7 @@ div.scrollmenu {
   padding: 188px 0;
 }
 .hero-header {
+  display: flex;
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
@@ -185,6 +186,7 @@ div.scrollmenu {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--white);
+  margin: 0 auto;
 }
 
 .hero-button {
