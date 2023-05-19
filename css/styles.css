@@ -62,12 +62,13 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /**-----HEADER-----**/
 .header-container {
   display: flex;
+  align-items: center;
 }
 .header-list {
   display: flex;
@@ -80,6 +81,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--navy-blue);
   padding: 24px 0;
+  display: block;
 }
 
 .header-link:hover,
@@ -91,6 +93,7 @@ img {
   display: flex;
   font-style: normal;
   gap: 40px;
+  margin-left: auto;
 }
 .header-address-link {
   color: var(--slate);
@@ -109,23 +112,7 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
-/* 
-div.scrollmenu a {
-  display: inline-block;
-  color: var(--navy-blue);
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-}
 
-div.scrollmenu a:hover {
-  background-color: var(--menu-color-hover);
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
 .page-header {
   display: flex;
   align-items: center;
@@ -140,7 +127,6 @@ div.scrollmenu a:hover {
 }
 
 .logo {
-  padding: 15px;
   border-radius: 4px;
   text-decoration: none;
   color: var(--iris);
@@ -159,7 +145,6 @@ div.scrollmenu a:hover {
 .menu {
   display: flex;
   gap: 40px;
-  padding: 15px;
   margin: 0;
   list-style: none;
   font-family: Roboto, sans-serif;
@@ -177,6 +162,7 @@ div.scrollmenu a:hover {
 }
 .contacts {
   gap: 40px;
+  justify-content: end;
 }
 .first-item-contacts {
   font-size: 16px;
@@ -207,6 +193,8 @@ div.scrollmenu a:hover {
   min-width: 169px;
   height: 56px;
   border: none;
+  margin: 0 auto;
+  margin-top: 47px;
 
   /* IRIS */
   background: var(--iris);
@@ -381,54 +369,15 @@ div.scrollmenu a:hover {
   color: var(--white);
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 600px;
-  text-align: center;
-  background-color: var(--navy-blue);
-  margin-bottom: 81px;
-}
 .center_first_screen {
   margin: 0;
   position: absolute;
-  top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-.containerFeatures {
-  padding: 188px 0;
-  margin-bottom: 78px;
-}
-.containerServices {
-  padding: 5px;
-  margin-bottom: 78px;
-}
 .containerTeam {
-  max-width: 100%;
-  height: 732px;
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--cloud);
-}
-.container-block1 {
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--cloud);
-}
-.container-block2 {
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--cloud);
-}
-.container-block3 {
-  padding: 5px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--cloud);
@@ -436,7 +385,6 @@ div.scrollmenu a:hover {
 
 .card-photo {
   width: calc((100% - 48px) / 3);
-  height: 420px;
   background-color: var(--white);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -459,12 +407,19 @@ div.scrollmenu a:hover {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 .photo-subheader {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.project-type {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
+  text-align: left;
+  color: var(--slate);
 }
 
 .card-set-services {
