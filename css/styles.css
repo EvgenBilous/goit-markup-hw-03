@@ -114,10 +114,6 @@ div.scrollmenu {
 }
 
 .page-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -178,7 +174,6 @@ div.scrollmenu {
   padding: 188px 0;
 }
 .hero-header {
-  display: flex;
   max-width: 496px;
   font-size: 56px;
   line-height: 1.07;
@@ -309,12 +304,6 @@ div.scrollmenu {
 }
 
 .team-members-names {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--navy-blue);
-  gap: 24px;
   padding: 32px 16px;
 }
 .team-item {
@@ -388,8 +377,6 @@ div.scrollmenu {
 .card-photo {
   width: calc((100% - 48px) / 3);
   background-color: var(--white);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 .card-set-photo {
@@ -475,9 +462,7 @@ div.scrollmenu {
   border-radius: 0px 0px 4px 4px;
 }
 .footy {
-  display: flex;
   width: 100%;
-  height: 312px;
   background-color: var(--navy-blue);
   padding: 100px 0;
 }
